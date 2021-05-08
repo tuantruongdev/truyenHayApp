@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <!-- Here you put the rest of your current view-->
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="4dp">
+
+
+            <TextView
+
+                android:id="@+id/tempToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/rounded_toolbar"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Trang Chủ"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingBtn"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+
+
+                android:layout_marginBottom="0dp"
+
+                android:foregroundTint="@color/black"
+
+
+                android:outlineProvider="none"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/transparent"
+                app:borderWidth="0dp"
+
+                app:srcCompat="@drawable/ic_baseline_search_24"
+                app:tint="@drawable/flatbtntint" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/girdRecycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tempToolbar"
+                android:layout_marginBottom="?attr/actionBarSize"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+</RelativeLayout>
