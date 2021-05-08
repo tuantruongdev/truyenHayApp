@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<RelativeLayout
+    android:id="@+id/layoutFollowing"
+    android:layout_marginTop="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <TextView
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvfollowing"
+
+
+
+        ></TextView>
+
+
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_facebook_24"
+            android:id="@+id/iconFollowing"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            >    </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iconFollowing"
+            android:text="Đang theo dõi"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:fontFamily="@font/calibri"
+
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/text_bg2"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="50dp"
+            android:padding="5dp"
+            android:id="@+id/tvNews"
+            ></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+       android:layout_marginRight="10dp"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        ></ImageView>
+
+
+</RelativeLayout>
+<RelativeLayout
+        android:layout_below="@+id/layoutFollowing"
+        android:id="@+id/layoutDownloaded"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvDownloaded"
+
+
+
+            ></TextView>
+
+
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_cloud_download_24"
+            android:id="@+id/iconDownloaded"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            >    </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iconDownloaded"
+            android:text="Đã tải xuống"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:fontFamily="@font/calibri"
+
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/text_bg2"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="50dp"
+            android:padding="5dp"
+            android:id="@+id/tvNewsDownloaded"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            ></ImageView>
+
+
+    </RelativeLayout>
+<RelativeLayout
+        android:layout_below="@+id/layoutDownloaded"
+        android:id="@+id/layoutBought"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvBought"
+
+
+
+            ></TextView>
+
+
+        <ImageView
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_baseline_shopping_basket_24"
+            android:id="@+id/iconBought"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            >    </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/iconBought"
+            android:text="Đã mua"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:fontFamily="@font/calibri"
+
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:background="@drawable/text_bg2"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="50dp"
+            android:padding="5dp"
+            android:id="@+id/tvNewsBought"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+            ></ImageView>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/layoutBought"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/endline"/>
+
+    <TextView
+        android:id="@+id/tvRecent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đọc gần đây"
+        android:textColor="@color/black"
+        android:fontFamily="@font/calibri"
+        android:textSize="35dp"
+        android:layout_below="@+id/endline"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentRecycleview"
+        android:layout_below="@+id/tvRecent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="?attr/actionBarSize"
+
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
