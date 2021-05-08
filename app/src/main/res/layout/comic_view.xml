@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <!-- Here you put the rest of your current view-->
+        <RelativeLayout
+            android:id="@+id/toolbarComicView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:padding="4dp">
+
+
+
+
+            <TextView
+
+                android:id="@+id/comicNameTitle"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/rounded_toolbar"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Tên truyện"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+
+            </TextView>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:layout_below="@+id/comicNameTitle"
+    android:id="@+id/relativeLayoutCover"
+    >
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/comicCover"
+                android:src="@drawable/wide2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                ></ImageView>
+            <TextView
+                android:id="@+id/tvComicNameInsideImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Solo Leveling"
+                android:fontFamily="@font/calibri"
+                android:background="@drawable/text_bg"
+               android:textSize="27dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                ></TextView>
+
+
+            <TextView
+                android:background="@drawable/text_bg"
+                android:id="@+id/tvComicTypeInsideImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="Hành động"
+                android:fontFamily="@font/calibri"
+                android:layout_below="@+id/tvComicNameInsideImage"
+                android:textSize="17dp"
+               android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+
+                ></TextView>
+
+    <TextView
+        android:id="@+id/tvComicDescInsideImage"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="10 years ago, after “the Gate” that connected the real world with the monster world opened..."
+        android:fontFamily="@font/calibri"
+        android:layout_below="@+id/tvComicTypeInsideImage"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/text_bg"
+        ></TextView>
+
+    <TextView
+        android:background="@drawable/text_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comicViewIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tvComicDescInsideImage"
+        android:text="969,696"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/tvComicViewCount"
+        ></TextView>
+    <ImageView
+        android:id="@+id/comicViewIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_remove_red_eye_24"
+        android:layout_toRightOf="@+id/comicEpisodeImage"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvComicDescInsideImage"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:tint="@color/white">    </ImageView>
+
+
+
+
+</RelativeLayout>
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingBtnsubscribe"
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentEnd="true"
+
+
+                android:layout_marginBottom="0dp"
+
+                android:foregroundTint="@color/black"
+
+
+                android:outlineProvider="none"
+                android:visibility="visible"
+                app:backgroundTint="@android:color/transparent"
+                app:borderWidth="0dp"
+
+                app:srcCompat="@drawable/ic_baseline_add_24"
+                app:tint="@drawable/flatbtntint" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listRecycleview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/relativeLayoutCover"
+                android:layout_marginBottom="?attr/actionBarSize"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+</RelativeLayout>

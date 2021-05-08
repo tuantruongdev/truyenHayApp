@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/jinwoo"
+        android:id="@+id/comicEpisodeImage"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+
+        >    </ImageView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/comicEpisodeImage"
+        ></TextView>
+    <TextView
+        android:id="@+id/comicEpisodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/comicEpisodeImage"
+        android:text="Phần 1 - Chap 1 - Chapter name"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/calibri"
+        android:layout_marginLeft="10dp"
+        ></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/viewIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/comicEpisodeTitle"
+        android:text="69,696"
+        android:id="@+id/tvViewCount"
+        ></TextView>
+    <ImageView
+        android:id="@+id/viewIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_remove_red_eye_24"
+        android:layout_toRightOf="@+id/comicEpisodeImage"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/comicEpisodeTitle"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+
+        >    </ImageView>
+    <ImageView
+        android:id="@+id/commentIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_comment_24"
+        android:layout_toRightOf="@+id/tvViewCount"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/comicEpisodeTitle"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+
+        >    </ImageView>.
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/commentIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/comicEpisodeTitle"
+        android:text="2"
+        android:id="@+id/tvCommentCount"
+        ></TextView>
+
+
+
+    <ImageView
+        android:id="@+id/timeIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_baseline_access_time_24"
+        android:layout_toRightOf="@+id/comicEpisodeImage"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/viewIcon"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+
+        >    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/timeIcon"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/viewIcon"
+        android:text="8 tiếng trước"
+
+        ></TextView>
+
+
+</RelativeLayout>
