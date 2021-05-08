@@ -110,12 +110,14 @@
         android:id="@+id/tvComicViewCount"
         ></TextView>
     <ImageView
+
+        android:background="@drawable/text_bg"
         android:id="@+id/comicViewIcon"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/ic_baseline_remove_red_eye_24"
         android:layout_toRightOf="@+id/comicEpisodeImage"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="15dp"
         android:layout_below="@+id/tvComicDescInsideImage"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
@@ -156,6 +158,7 @@
                 android:id="@+id/listRecycleview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:layout_below="@+id/relativeLayoutCover"
                 android:layout_marginBottom="?attr/actionBarSize"></androidx.recyclerview.widget.RecyclerView>
 
